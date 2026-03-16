@@ -5,7 +5,7 @@ This repository contains an automated measurement and instrumentation system dev
 The system utilizes a **USB Data Acquisition (DAQ)** device and **LabVIEW** to perform automated voltage sweeps, allowing for the precise mapping of a transistor's operating regions: Cutoff, Forward-Active, and Saturation.
 
 ## 📋 Project Overview
-The core objective is to generate the family of $I_C - V_{CE}$ curves by modulating base current ($I_B$) and sweeping collector-emitter voltage ($V_{CE}$). This provides a practical understanding of semiconductor physics, including the **Early Effect** and **Current Gain ($\beta$)**.
+The core objective is to generate the $I_C - V_{CE}$ relationship by modulating base current ($I_B$) and sweeping collector-emitter voltage ($V_{CE}$). This provides a practical understanding of semiconductor physics, including the **Early Effect** and **Current Gain ($\beta$)**.
 
 ### Key Features
 * **Automated Two-Tier Sweep**: A nested loop structure where the outer loop steps through base bias ($V_B$) and the inner loop sweeps collector voltage ($V_C$).
@@ -31,9 +31,9 @@ The Virtual Instrument (VI) architecture is designed for synchronization and acc
 4. **Temperature Conversion**: Implements the formula $T(^\circ\text{C}) = (100 \times V_{LM335}) - 273.15$ for real-time Celsius display.
 
 ## 📈 Technical Specifications & Physics
-* [cite_start]**Current Gain Relationship**: $I_C \approx \beta \cdot I_B$[cite: 2663].
-* [cite_start]**Early Effect Modeling**: $I_C(V_{CE}) \approx I_{C0} \cdot (1 + \frac{V_{CE}}{V_A})$, where $V_A$ is the Early Voltage[cite: 2677, 2683].
-* [cite_start]**Saturation Voltage**: Typically observed between $0.05\text{ V}$ and $0.3\text{ V}$[cite: 2712].
+* **Current Gain Relationship**: $I_C \approx \beta \cdot I_B$.
+* **Early Effect Modeling**: $I_C(V_{CE}) \approx I_{C0} \cdot (1 + \frac{V_{CE}}{V_A})$, where $V_A$ is the Early Voltage.
+* **Saturation Voltage**: Typically observed between $0.05\text{ V}$ and $0.3\text{ V}$.
 
 ## 🚀 How to Run
 1. **Hardware**: Connect the BC547B and signal conditioning circuit to your USB DAQ.
