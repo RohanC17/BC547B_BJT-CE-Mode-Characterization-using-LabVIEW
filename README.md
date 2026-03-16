@@ -1,7 +1,5 @@
 # BJT Characterization System (Common Emitter Mode)
 
-This repository contains an automated measurement and instrumentation system developed to characterize a **Small-Signal NPN BJT (BC547B)** in Common-Emitter (CE) configuration. 
-
 The system utilizes a **USB Data Acquisition (DAQ)** device and **LabVIEW** to perform automated voltage sweeps, allowing for the precise mapping of a transistor's operating regions: Cutoff, Forward-Active, and Saturation.
 
 ## 📋 Project Overview
